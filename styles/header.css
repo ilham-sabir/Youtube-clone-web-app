@@ -1,0 +1,132 @@
+/*this is a styling for the header*/
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    background-color:white;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(229, 223, 223);
+    z-index:100;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.hmburger-menu{
+   height: 24px;
+   margin-left: 24px;
+   margin-right: 20px;
+}
+.youtube-logo{
+    height: 20px;
+}
+.middle-section{
+    display:flex;
+    flex:1;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+}
+.search-bar{
+    flex:1;
+    height: 34px;
+    font-size:16px;
+    padding-left:10px;
+    border-width:1px;
+    border-style: solid;
+    border-color:rgb(192, 192, 192);
+    border-radius:2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width:0;
+}
+.search-bar::placeholder{
+    font-size: 15px;
+
+}
+.search-button{
+    height:38px;
+    width: 66px;
+    background-color:rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color:rgb(192, 192, 192);
+    margin-left: -1px;
+    margin-right: 10px;
+    border-radius:2px;
+}
+.search-button , .voice-button , .upload-continer, .app-continer, .notification-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.search-button .tooltip , .voice-button .tooltip , .upload-continer .tooltip, .app-continer .tooltip, .notification-container .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding:4px 8px 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity:0;
+    transition: opacity 0.15s;
+    white-space:nowrap;
+}
+.search-button:hover .tooltip, .voice-button:hover .tooltip, .upload-continer:hover .tooltip, .app-continer:hover .tooltip, .notification-container:hover .tooltip{
+    opacity: 1;
+}
+.search-icon{
+    height:25px;
+    width: 40px;
+}
+.voice-button{
+    height:40px;
+    width: 40px;
+    border-radius: 20px;
+    border:none;
+    background-color:rgb(248, 248, 248);
+}
+.voice-icon{
+    height:24px;
+}
+.right-section{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width: 180px;
+    flex-shrink:0;
+    margin-right:20px;
+}
+.upload-icon{
+    height: 24px;
+}
+.app-icon{
+    height:24px;
+}
+.notification-icon{
+    height: 24px;
+}
+.notification-container{
+    position: relative;
+}
+.notoification_number{
+    background-color: rgb(201, 6, 6);
+    color:white;
+    position: absolute;
+    right:-6px;
+    top:-2px;
+    font-size:10px;
+    padding:2px 5px 2px 5px;
+    border-radius:10px;
+}
+.profile-icon{
+    height: 32px;
+    border-radius:16px;
+}
